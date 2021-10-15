@@ -1,20 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-float root=0;
-float avgF();
+//main
 void main()
 {
-   float a; 
+   float a;
    scanf("%f", &a);
-   avgF(a);
-   printf("%f\n", root);
+   float h2 = a;
+   float h1 = 0;
+   float av=a;
+   while (abs((av*av)-a)>0.0001) {
+      if ((av*av)<a) {
+         h1=av; 
+      }
+      else {
+         h2=av; 
+      }
+      av=(h1+h2)/2;
+      printf("%f\t", h1);
+      printf("%f\t", h2);
+      printf("%f\n", av);
+   }
+   printf("%f\n", av);
 }
-
-//average finde 
-float avgF(float h1)
-{
-   float h2 = 1.5*h1;
-   float h2s=h2*h2; 
-}
-
 
