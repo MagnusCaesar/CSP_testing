@@ -10,7 +10,7 @@ void main()
    float h2 = a;
    float h1 = 0;
    float av=a;
-   while (fabs((av*av)-a) > 0.0000000001) {
+   while (fabs((av*av)-a) > 0.00001) {
       if ((av*av)<a) {
          h1=av; 
       }
@@ -22,6 +22,6 @@ void main()
       printf("%f\t", h2);
       printf("%f\n", av);
    }
-   printf("%f\n", av);
+   printf("Final answer = %f\n", av);
 }
 
