@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 //main
 void main()
@@ -9,7 +10,7 @@ void main()
    float h2 = a;
    float h1 = 0;
    float av=a;
-   while (abs((av*av)-a)>0.0001) {
+   while (fabs((av*av)-a) > 0.0000000001) {
       if ((av*av)<a) {
          h1=av; 
       }
