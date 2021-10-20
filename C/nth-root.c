@@ -23,14 +23,14 @@ void main()
    float h2 = a;
    float h1 = 0;
    float av=a;
-   while (fabs(nth(av) -a) > 0.00001) {
-      if ((av*av)<a) {
+   while (fabs(nth(av) -a) > 0.000001) {
+      if ((nth(av))<a) {
          h1=av; 
       }
       else {
          h2=av; 
       }
-      av=(h1+h2)/k;
+      av=(h1+h2)/2;
       printf("%f\t", h1);
       printf("%f\t", h2);
       printf("%f\n", av);
