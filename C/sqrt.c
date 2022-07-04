@@ -23,4 +23,3 @@ void main()
    }
    printf("Final answer = %f\n", av);
 }
-
